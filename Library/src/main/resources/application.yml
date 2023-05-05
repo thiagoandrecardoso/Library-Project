@@ -1,6 +1,16 @@
 spring:
   application:
     name: Library
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=LibraryDB
+    username: syssa
+    password: suquele123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2019Dialect
+
+
+
 
 server:
   port: 0 # UP random port
