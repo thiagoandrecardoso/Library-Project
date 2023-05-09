@@ -3,13 +3,16 @@ spring:
     name: Library
   datasource:
     url: jdbc:sqlserver://localhost:1433;databaseName=LibraryDB
-    username: syssa
-    password: suquele123
+    username: sa
+    password: Pass@word
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
-    database-platform: org.hibernate.dialect.SQLServer2019Dialect
-
-
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
 
 
 server:

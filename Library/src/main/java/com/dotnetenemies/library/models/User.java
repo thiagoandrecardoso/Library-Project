@@ -6,10 +6,11 @@ import javax.persistence.*;
 
 @Entity
 @Data
+@Table(name = "LIB_User")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column
